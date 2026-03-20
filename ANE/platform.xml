@@ -1,0 +1,13 @@
+<platform xmlns="http://ns.adobe.com/air/extension/22.0">
+    <sdkVersion>12.0</sdkVersion>
+    <linkerOptions>
+        <option>-framework GoogleMobileAds</option>
+        <option>-framework GoogleAppMeasurement</option>
+        <option>-framework GoogleUtilities</option>
+        <option>-framework nanopb</option>
+        <option>-framework PromisesObjC</option>
+        <option>-framework GoogleUserMessagingPlatform</option>
+    </linkerOptions>
+    <packagedDependencies>
+    </packagedDependencies>
+</platform>

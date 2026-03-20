@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.fluocode.admob.app-merged_res-17:/xml/gma_ad_services_config.xml",
+        "source": "com.fluocode.admob.app-play-services-ads-lite-23.0.0-7:/xml/gma_ad_services_config.xml"
+    },
+    {
+        "merged": "com.fluocode.admob.app-merged_res-17:/xml/image_share_filepaths.xml",
+        "source": "com.fluocode.admob.app-browser-1.4.0-11:/xml/image_share_filepaths.xml"
+    }
+]

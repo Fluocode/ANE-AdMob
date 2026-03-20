@@ -1,0 +1,29 @@
+<platform xmlns="http://ns.adobe.com/air/extension/22.0">
+    <sdkVersion>13.0</sdkVersion>
+    <linkerOptions>
+        <option>-ios_version_min 13.0</option>
+        <!-- Runtime path for frameworks -->
+        <option>-rpath @executable_path/Frameworks</option>
+        <!-- Swift libraries path -->
+        <option>-rpath /usr/lib/swift</option>
+        <!-- Swift static libraries search path -->
+        <option>-L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos</option>
+        <!-- Link Swift compatibility libraries -->
+        <option>-lswiftCompatibility56</option>
+        <option>-lswiftCompatibilityConcurrency</option>
+        <option>-lswiftCompatibilityDynamicReplacements</option>
+        <!-- JavaScriptCore required by GoogleMobileAds (GADOMIDLightJSExecutor) -->
+        <option>-framework JavaScriptCore</option>
+        <option>-framework GoogleMobileAds</option>
+        <option>-framework UserMessagingPlatform</option>
+
+        <option>-lz</option>
+        <option>-lc++</option>
+        <option>-liconv</option>
+        <option>-ObjC</option>
+    </linkerOptions>
+    <packagedDependencies>
+        <packagedDependency>UserMessagingPlatform.framework</packagedDependency>
+        <packagedDependency>GoogleMobileAds.framework</packagedDependency>
+    </packagedDependencies>
+</platform>

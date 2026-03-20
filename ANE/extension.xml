@@ -1,0 +1,48 @@
+<extension xmlns="http://ns.adobe.com/air/extension/22.0">
+  <id>com.fluocode.admob</id>
+  <versionNumber>1.0.0</versionNumber>
+  <copyright>Fluocode. All rights reserved.</copyright>
+  <description>
+    <text xml:lang="en">AdMob Air Native Extension - fluocode.com</text>
+  </description>
+  <platforms>
+    <platform name="Android-ARM64">
+      <applicationDeployment>
+        <nativeLibrary>classes.jar</nativeLibrary>
+        <initializer>com.fluocode.admob.MyExtension</initializer>
+        <finalizer>com.fluocode.admob.MyExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>classes.jar</nativeLibrary>
+        <initializer>com.fluocode.admob.MyExtension</initializer>
+        <finalizer>com.fluocode.admob.MyExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="Android-x86">
+      <applicationDeployment>
+        <nativeLibrary>classes.jar</nativeLibrary>
+        <initializer>com.fluocode.admob.MyExtension</initializer>
+        <finalizer>com.fluocode.admob.MyExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="iPhone-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libAdMob.a</nativeLibrary>
+        <initializer>comFluocodeAdmobMyExtensionInitializer</initializer>
+        <finalizer>comFluocodeAdmobMyExtensionFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+	 <platform name="iPhone-x86">
+      <applicationDeployment>
+        <nativeLibrary>libAdMob.a</nativeLibrary>
+        <initializer>comFluocodeAdmobMyExtensionInitializer</initializer>
+        <finalizer>comFluocodeAdmobMyExtensionFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="default">
+      <applicationDeployment />
+    </platform>
+  </platforms>
+</extension>

@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.fluocode.admob.app-mergeReleaseResources-15:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\esdeb\\.gradle\\caches\\8.9\\transforms\\e61fdfbda85b1f211cebcfd6ae153c21\\transformed\\browser-1.4.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,170,269,381",
+                        "endColumns": "114,98,111,105",
+                        "endOffsets": "165,264,376,482"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\esdeb\\.gradle\\caches\\8.9\\transforms\\e994f24256c4155e436627afedcc5ff3\\transformed\\core-1.8.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "487",
+                        "endColumns": "100",
+                        "endOffsets": "583"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.fluocode.admob.app-merged_res-17:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\esdeb\\.gradle\\caches\\8.9\\transforms\\e61fdfbda85b1f211cebcfd6ae153c21\\transformed\\browser-1.4.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,170,269,381",
+                        "endColumns": "114,98,111,105",
+                        "endOffsets": "165,264,376,482"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\esdeb\\.gradle\\caches\\8.9\\transforms\\e994f24256c4155e436627afedcc5ff3\\transformed\\core-1.8.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "487",
+                        "endColumns": "100",
+                        "endOffsets": "583"
+                    }
+                }
+            ]
+        }
+    ]
+}

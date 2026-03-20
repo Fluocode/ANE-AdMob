@@ -1,0 +1,10 @@
+<platform xmlns="http://ns.adobe.com/air/extension/30.0">
+
+	<packagedResources>
+		<packagedResource>
+			<packageName>com.myflashlab.admob</packageName>
+			<folderName>com.myflashlab.air.extensions.admob-res</folderName>
+		</packagedResource>
+	</packagedResources>
+	
+</platform>

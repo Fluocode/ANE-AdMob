@@ -1,0 +1,24 @@
+<platform xmlns="http://ns.adobe.com/air/extension/30.0">
+    <sdkVersion>10.0.0</sdkVersion>
+    <linkerOptions>
+        <option>-ios_version_min 10.0</option>
+		
+        <!-- AdMob V7.55.1 -->
+        <option>-framework GoogleMobileAds</option>
+		
+        <!-- required for Firebase Core v6.23.0 -->
+        <option>-framework GoogleAppMeasurement</option>
+        <option>-framework GoogleUtilities</option>
+        <option>-framework nanopb</option>
+        <option>-framework PromisesObjC</option>
+
+        <!-- AdobeAIR SDK bug workaround: https://tracker.adobe.com/#/view/AIR-4198557 -->
+        <option>-lclang_rt.ios</option>
+        
+        <option>-lz</option>
+        <option>-lc++</option>
+        <option>-liconv</option>
+        <option>-w</option>
+        <option>-ObjC</option>
+    </linkerOptions>
+</platform>

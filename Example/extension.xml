@@ -1,0 +1,221 @@
+<extension xmlns="http://ns.adobe.com/air/extension/30.0">
+  <id>com.myflashlab.air.extensions.admob</id>
+  <versionNumber>6.2.0</versionNumber>
+  <copyright>2020, MyFlashLabs Team. All rights reserved.</copyright>
+  <description>
+    <text xml:lang="en">Air Native Extension!</text>
+  </description>
+  <platforms>
+    <platform name="Android-ARM64">
+      <applicationDeployment>
+        <nativeLibrary>classes.jar</nativeLibrary>
+        <initializer>com.myflashlab.admob.MyExtension</initializer>
+        <finalizer>com.myflashlab.admob.MyExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>classes.jar</nativeLibrary>
+        <initializer>com.myflashlab.admob.MyExtension</initializer>
+        <finalizer>com.myflashlab.admob.MyExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="Android-x86">
+      <applicationDeployment>
+        <nativeLibrary>classes.jar</nativeLibrary>
+        <initializer>com.myflashlab.admob.MyExtension</initializer>
+        <finalizer>com.myflashlab.admob.MyExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="iPhone-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libexAdMob.a</nativeLibrary>
+        <initializer>comMyflashlabsAdMobMyExtensionInitializer</initializer>
+        <finalizer>comMyflashlabsAdMobMyExtensionFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="default">
+      <applicationDeployment />
+    </platform>
+  </platforms>
+</extension>
+
+<!-- ANE SETUP
+{
+        "minAirVersion":"30.0",
+        "minSwfVersion":"36",
+        "miniOS":"10.0",
+        "minAndroid":"19",
+        "inputValue":[
+                {
+                        "title":"Enter your \"Android\" AdMob APP ID",
+                        "value":"",
+                        "info":"<b>Android APP ID</b><br><br>If you are going to use AdMob in your app, you must enter your Android APP ID. This ID is found in your AdMob account.",
+                        "shortcode":"[ADMOB_APP_ID_ANDROID]"
+                },
+                {
+                        "title":"Enter your \"iOS\" AdMob APP ID",
+                        "value":"",
+                        "info":"<b>iOS APP ID</b><br><br>If you are going to use AdMob in your app, you must enter your iOS APP ID. This ID is found in your AdMob account.",
+                        "shortcode":"[ADMOB_APP_ID_IOS]"
+                }
+        ],
+        "platforms":[
+                {
+                        "platform":"android",
+                        "dependencies":[
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.androidx.design",
+                                        "v":"1.1.1"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.androidx.core",
+                                        "v":"1.3.1"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.androidx.arch",
+                                        "v":"2.1.0"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.androidx.lifecycle",
+                                        "v":"2.2.0"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.overrideAir",
+                                        "v":"6.2.0"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.googlePlayServices.ads",
+                                        "v":"19.2.0"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.googlePlayServices.ads.lite",
+                                        "v":"19.2.0"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.googlePlayServices.basement",
+                                        "v":"17.3.0"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.googlePlayServices.measurementBase",
+                                        "v":"17.4.4"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.googlePlayServices.gass",
+                                        "v":"19.2.0"
+                                },
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.gson",
+                                        "v":"2.8.6"
+                                }
+                        ],
+                        "manifest":[
+                                {
+                                        "node":"<xml><uses-permission android:name=\"android.permission.INTERNET\"/></xml>",
+                                        "parent":"manifest",
+                                        "sibling":""
+                                },
+                                {
+                                        "node":"<xml><uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/></xml>",
+                                        "parent":"manifest",
+                                        "sibling":""
+                                },
+                                {
+                                        "node":"<xml><uses-permission android:name=\"android.permission.WAKE_LOCK\"/></xml>",
+                                        "parent":"manifest",
+                                        "sibling":""
+                                },
+                                {
+                                        "node":"<xml><activity android:name=\"com.google.android.gms.ads.AdActivity\" android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:theme=\"@android:style/Theme.Translucent\"/></xml>",
+                                        "parent":"manifest.application",
+                                        "sibling":""
+                                },
+                                {
+                                        "node":"<xml><provider android:name=\"com.google.android.gms.ads.MobileAdsInitProvider\" android:authorities=\"air.com.doitflash.admob.mobileadsinitprovider\" android:exported=\"false\" android:initOrder=\"100\" /></xml>",
+                                        "parent":"manifest.application",
+                                        "sibling":""
+                                },
+                                {
+                                        "node":"<xml><meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\"/></xml>",
+                                        "parent":"manifest.application",
+                                        "sibling":""
+                                }
+                        ],
+                        "inputMultiple":[
+                                {
+                                        "title":"Use AdMob (MUST uncheck DoubleClick)",
+                                        "checked":true,
+                                        "node":"<xml><meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"[ADMOB_APP_ID_ANDROID]\"/></xml>",
+                                        "parent":"manifest.application",
+                                        "sibling":""
+                                },
+                                {
+                                        "title":"Use DoubleClick (MUST uncheck AdMob)",
+                                        "checked":false,
+                                        "node":"<xml><meta-data android:name=\"com.google.android.gms.ads.AD_MANAGER_APP\" android:value=\"true\"/></xml>",
+                                        "parent":"manifest.application",
+                                        "sibling":""
+                                }
+                        ]
+                },
+                {
+                        "platform":"ios",
+                        "dependencies":[
+                                {
+                                        "id":"com.myflashlab.air.extensions.dependency.overrideAir",
+                                        "v":"6.2.0"
+                                }
+                        ],
+                        "manifest":[
+                                {
+                                        "node":"<InfoAdditions><key>NSAppTransportSecurity</key><dict><key>NSAllowsArbitraryLoads</key><true/></dict></InfoAdditions>"
+                                }
+                        ],
+                        "inputMultiple":[
+                                {
+                                        "title":"Use AdMob (MUST uncheck DoubleClick)",
+                                        "checked":true,
+                                        "node":"<InfoAdditions><key>GADApplicationIdentifier</key><string>[ADMOB_APP_ID_IOS]</string></InfoAdditions>"
+                                },
+                                {
+                                        "title":"Use DoubleClick (MUST uncheck AdMob)",
+                                        "checked":false,
+                                        "node":"<InfoAdditions><key>GADIsAdManagerApp</key><true/></InfoAdditions>"
+                                }
+                        ],
+                        "frameworks":[
+                                {
+                                        "name":"GoogleMobileAds.framework",
+                                        "url":"https://dl.google.com/dl/firebase/ios/carthage/6.30.0/Google-Mobile-Ads-SDK-f02e808e35dea82c.zip",
+                                        "sdk":"firebase-admob",
+                                        "v":"6.30.0"
+                                },
+                                {
+                                        "name":"GoogleAppMeasurement.framework",
+                                        "url": "https://dl.google.com/dl/firebase/ios/carthage/6.30.0/FirebaseAnalytics-92d6bb1fb54e8a4a.zip",
+                                        "sdk":"firebase-analytics",
+                                        "v":"6.30.0"
+                                },
+                                {
+                                        "name":"GoogleUtilities.framework",
+                                        "url": "https://dl.google.com/dl/firebase/ios/carthage/6.30.0/FirebaseAnalytics-92d6bb1fb54e8a4a.zip",
+                                        "sdk":"firebase-analytics",
+                                        "v":"6.30.0"
+                                },
+                                {
+                                        "name":"nanopb.framework",
+                                        "url": "https://dl.google.com/dl/firebase/ios/carthage/6.30.0/FirebaseAnalytics-92d6bb1fb54e8a4a.zip",
+                                        "sdk":"firebase-analytics",
+                                        "v":"6.30.0"
+                                },
+                                {
+                                        "name":"PromisesObjC.framework",
+                                        "url": "https://dl.google.com/dl/firebase/ios/carthage/6.30.0/FirebaseAnalytics-92d6bb1fb54e8a4a.zip",
+                                        "sdk":"firebase-analytics",
+                                        "v":"6.30.0"
+                                }
+                        ]
+                }
+        ]
+}
+-->

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.fluocode.admob.app-merged_res-17:/color/common_google_signin_btn_text_dark.xml",
+        "source": "com.fluocode.admob.app-play-services-base-18.0.0-10:/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "com.fluocode.admob.app-merged_res-17:/color/common_google_signin_btn_text_light.xml",
+        "source": "com.fluocode.admob.app-play-services-base-18.0.0-10:/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "com.fluocode.admob.app-merged_res-17:/color/common_google_signin_btn_tint.xml",
+        "source": "com.fluocode.admob.app-play-services-base-18.0.0-10:/color/common_google_signin_btn_tint.xml"
+    }
+]
