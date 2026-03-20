@@ -271,4 +271,9 @@ See project license file if present; copyright notice appears in `extension.xml`
 
 ---
 
-**fluocode.com** — AdMob ANE for Adobe AIR
+**fluocode.com** — AdMob ANE for AIR
+
+***
+If You like what I make please donate:
+[![Foo](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4QBWVDKEVRL46)
+***
